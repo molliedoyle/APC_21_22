@@ -1,6 +1,10 @@
 import java.util.*;
 import java.io.*;
-
+/**
+ * ScrabbleRackManager shows all of the playable options from a set of letters
+ * @version 03/25/2022
+ * @author molliedoyle
+ */
 public class ScrabbleRackManager<tiles> {
 
     ArrayList<ArrayList<String>> dictionary;
@@ -10,7 +14,7 @@ public class ScrabbleRackManager<tiles> {
     String[] letters = {"A", "A", "A", "A", "A", "A", "A", "A", "A", "B", "B", "C", "C", "D", "D", "D", "D", "E", "E", "E", "E", "E", "E", "E", "E", "E", "E", "E", "E", "F", "F", "G", "G", "G", "H", "H", "I", "I", "I", "I", "I", "I", "I", "I", "I", "J", "K", "L", "L", "L", "L", "M", "M", "N", "N", "N", "N", "N", "N", "N", "O", "O", "O", "O", "O", "O", "O", "O", "P", "P", "Q", "R", "R", "R", "R", "R", "R", "S", "S", "S", "S", "T", "T", "T", "T", "T", "T", "U", "U", "U", "U", "V", "V", "W", "W", "X", "Y", "Y", "Z"};
 
 
-    /** class constructor */
+    /** class constructor*/
     public ScrabbleRackManager(){
         dictionary = new ArrayList<>();
         for(int i = 0; i < alpha.length(); i++) {
@@ -108,7 +112,7 @@ public class ScrabbleRackManager<tiles> {
         return true;
     }
 
-    /** main method for the class; use only 3 command lines in main */
+    /** main method for the class; use only 3 command lines in main*/
     public static void main(String[] args){
         ScrabbleRackManager app = new ScrabbleRackManager();
         app.printRack();
