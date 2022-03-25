@@ -62,7 +62,8 @@ public class ScrabbleRackManager<tiles> {
 
     /** builds and returns an ArrayList of String objects that are values pulled from
      * the dictionary/database based on the available letters in the user's tile
-     * rack */
+     * rack
+     * @return an ArrayList, plays*/
     public ArrayList<String> getPlaylist() {
         ArrayList<String> plays = new ArrayList<>();
       //  for(bucket : dictionary)
@@ -112,7 +113,8 @@ public class ScrabbleRackManager<tiles> {
         return true;
     }
 
-    /** main method for the class; use only 3 command lines in main*/
+    /** main method for the class; use only 3 command lines in main
+     * @param args command line arguments if needed*/
     public static void main(String[] args){
         ScrabbleRackManager app = new ScrabbleRackManager();
         app.printRack();
